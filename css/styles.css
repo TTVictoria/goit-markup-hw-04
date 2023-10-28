@@ -145,10 +145,11 @@ body {
     background-color: #2e2f42;
     padding: 188px 0; /*для визначення відступів всередині секції*/
     justify-content: center;
-    background-image: url(../images/people-office\ 1.jpg);
-    background-size: 1440px 600px; 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    max-width: 1440px; 
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover; /*для позиціонування зображення на всю площу фону елемента*/
 }
 
 
@@ -181,7 +182,7 @@ body {
     min-width: 169px;
     height: 56px;
     border: none; /*для вимкнення стандартного оформлення кнопки*/
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px; /*для визначення заокруглень у кнопки*/
     margin: 0 auto; /* Центрування горизонтально */
     text-align: center;
