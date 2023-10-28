@@ -37,8 +37,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
-    margin-right: 76px;
-    /*для визначення відступа від логотипа*/
+    margin-right: 76px; /*для визначення відступа від логотипа*/
 }
 
 .logo-studio {
@@ -46,7 +45,7 @@ body {
     font-family: "Raleway";
 }
 
-/*для розміщення логотипу та меню в одну лінію*/
+
 .nav-header {
     display: flex;
     align-items: center;
@@ -63,8 +62,7 @@ body {
     margin: 0;
     padding-left: 0;
     display: flex;
-    gap: 40px;
-    /*для визначення відступів між пунктами меню*/
+    gap: 40px; /*для визначення відступів між пунктами меню*/
 }
 
 .a .nav-link {
@@ -107,15 +105,15 @@ body {
     text-decoration: none;
     margin: 0;
     padding-left: 0;
+    display: block;
+    display: block;
     padding: 24px 0;
 }
 
 .address {
     font-style: normal;
-    display: flex;
-    /*для розташування контактів по горизонталі*/
-    gap: 40px;
-    /*для визначення відступів між пунктами контактів*/
+    display: flex; /*для розташування контактів по горизонталі*/
+    gap: 40px; /*для визначення відступів між пунктами контактів*/
 }
 
 .kontakt {
@@ -123,6 +121,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-decoration: none;
 }
 
 .kontakt:hover {
@@ -144,9 +143,12 @@ body {
 /*section 1*/
 .section-effective {
     background-color: #2e2f42;
-    padding: 188px 0;
-    /*для визначення відступів всередині секції*/
+    padding: 188px 0; /*для визначення відступів всередині секції*/
     justify-content: center;
+    background-image: url(../images/people-office\ 1.jpg);
+    background-size: 1440px 600px; 
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -160,6 +162,7 @@ body {
     margin: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 48px;
     padding: 0;
     max-width: 496px;
     height: 120px;
@@ -177,13 +180,10 @@ body {
     display: block;
     min-width: 169px;
     height: 56px;
-    border: none;
-    /*для вимкнення стандартного оформлення кнопки*/
+    border: none; /*для вимкнення стандартного оформлення кнопки*/
 
-    border-radius: 4px;
-    /*для визначення заокруглень у кнопки*/
-    margin: 0 auto;
-    /* Центрування горизонтально */
+    border-radius: 4px; /*для визначення заокруглень у кнопки*/
+    margin: 0 auto; /* Центрування горизонтально */
     text-align: center;
 }
 
@@ -198,8 +198,7 @@ body {
 /*section 2*/
 
 .section-about {
-    padding: 120px 0 120px;
-    /*для визначення відступів всередині секції*/
+    padding: 120px 0 120px; /*для визначення відступів всередині секції*/
 }
 
 .h-about {
@@ -233,8 +232,7 @@ body {
 
 
 .li-about {
-    flex-basis: calc((100% - 3 * 24px) / 4);
-    /*для визначення ширини пункту списку*/
+    flex-basis: calc((100% - 3 * 24px) / 4); /*для визначення ширини пункту списку*/
 }
 
 
@@ -245,13 +243,33 @@ body {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin: 0;
-    padding: 0;
-    margin-bottom: 8px;
-    /*для визначення відступу між заголовком і параграфом*/
-    text-align: center;
+    text-indent: 0%;
+    margin-bottom: 8px;  /*для визначення відступу між заголовком і параграфом*/
 }
 
 .p-aboutus {
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin: 0;
+    padding: 0;
+    text-indent: 0%;
+}
+
+.h-people {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+
+.p-people {
     line-height: 1.5;
     font-size: 16px;
     letter-spacing: 0.02em;
@@ -279,19 +297,16 @@ body {
     padding: 0;
     margin-bottom: 72px;
     font-weight: 700;
-    width: 162px;
-    height: 40px;
+
+
 }
 
 
 .ul-ourteam {
     margin: 0;
-    padding-left: 0;
-    /*для визначення відступів між заголовком та параграфом*/
-    display: flex;
-    /*для розміщення елементів списку по горизонталі в рядок*/
-    gap: 24px;
-    /*для визначення розмірів відступів між елементами списку*/
+    padding-left: 0; /*для визначення відступів між заголовком та параграфом*/
+    display: flex; /*для розміщення елементів списку по горизонталі в рядок*/
+    gap: 24px; /*для визначення розмірів відступів між елементами списку*/
 }
 
 .li-productdesigner {
@@ -299,10 +314,8 @@ body {
     list-style-type: none;
     margin: 0;
     padding-left: 0;
-    border-radius: 0px 0px 4px 4px;
-    /*для визначення заокруглень внизу блока*/
-    width: calc((100% - 72px) / 4);
-    /*для визначення ширини пункту списку*/
+    border-radius: 0px 0px 4px 4px; /*для визначення заокруглень внизу блока*/
+    width: calc((100% - 72px) / 4); /*для визначення ширини пункту списку*/
     gap: 32px;
 }
 
@@ -313,17 +326,13 @@ img {
 .image-container {
     display: block;
     width: 100%;
-    text-align: center;
-    padding: 32px 0;
-    /*для визначення відступів від краю контейнера*/
-
+    padding: 32px 0; /*для визначення відступів від краю контейнера*/
 }
 
 /*section 4*/
 .portfolio {
     padding-top: 120px;
-    padding-bottom: 120px;
-    /*для визначення відступів всередині секції*/
+    padding-bottom: 120px; /*для визначення відступів всередині секції*/
 }
 
 
@@ -342,14 +351,12 @@ img {
 }
 
 .ul-portfolio {
-    display: flex;
-    /*для розміщення елементів списку в рядок по горизонталі*/
-    flex-wrap: wrap;
-    /*для переносу елементів списку на новий рядок якщо їм не вистачає місця в попередньому*/
-    column-gap: 24px;
-    /*для визначення горизонтальних відступів між пунктами списку*/
-    row-gap: 48px;
-    /*для визначення вертикальних відступів між елементами списку якщо вони переносяться на новий рядок*/
+    display: flex; /*для розміщення елементів списку в рядок по горизонталі*/
+    flex-wrap: wrap; /*для переносу елементів списку на новий рядок якщо їм не вистачає місця в попередньому*/
+    column-gap: 24px; /*для визначення горизонтальних відступів між пунктами списку*/
+    row-gap: 48px; /*для визначення вертикальних відступів між елементами списку якщо вони переносяться на новий рядок*/
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -357,8 +364,7 @@ img {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: calc((100% - 48px) / 3);
-    /*для визначення ширини для елемента списку*/
+    width: calc((100% - 48px) / 3); /*для визначення ширини для елемента списку*/
 }
 
 .h-portfolio {
@@ -369,8 +375,7 @@ img {
     color: #2e2f42;
     margin: 0;
     padding: 0;
-    margin-bottom: 8px;
-    /*для визначення відступу між заголовком та параграфом*/
+    margin-bottom: 8px; /*для визначення відступу між заголовком та параграфом*/
 }
 
 .p-portfolio {
@@ -385,24 +390,20 @@ img {
 
 
 
-.image-container {
+.img-container {
     display: block;
     max-width: 100%;
     height: auto;
-    padding: 32px 16px;
-    /*для визначення відступів від країв контейнера*/
-    border: 1px solid #e7e9fc;
-    /*для визначення стилю обводки по периметру контейнера*/
-    border-top: none;
-    /*для скидання стилів обводки для верхнього краю контейнера*/
+    padding: 32px 16px; /*для визначення відступів від країв контейнера*/
+    border: 1px solid #e7e9fc; /*для визначення стилю обводки по периметру контейнера*/
+    border-top: none; /*для скидання стилів обводки для верхнього краю контейнера*/
 }
 
 /*футер*/
 .footer {
     background-color: #2e2f42;
     padding-top: 100px;
-    padding-bottom: 100px;
-    /*для визначення відступів всередині секції*/
+    padding-bottom: 100px; /*для визначення відступів всередині секції*/
 }
 
 .logo-footer {
@@ -414,12 +415,9 @@ img {
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
-    display: inline-block;
-    /*для додавання посиланню блочних властивостей*/
-    margin-bottom: 16px;
-    /*для визначення відступу між посиланням та параграфом*/
-    display: inline-block;
-    /*для додавання посиланню блочних властивостей*/
+    display: inline-block; /*для додавання посиланню блочних властивостей*/
+    margin-bottom: 16px;  /*для визначення відступу між посиланням та параграфом*/
+    display: inline-block;  /*для додавання посиланню блочних властивостей*/
 }
 
 .logo-studio-footer {
@@ -433,8 +431,7 @@ img {
     letter-spacing: 0.02em;
     margin: 0;
     padding: 0;
-    max-width: 264px;
-    /*для визначення максимально допустимої ширини тексту*/
+    max-width: 264px; /*для визначення максимально допустимої ширини тексту*/
     font-size: 16px;
     font-weight: 400;
     text-align: left;
