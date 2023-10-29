@@ -375,7 +375,7 @@ img {
 .li-ellipse {
     width: 40px;
     height: 40px;
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-ellipse {
@@ -422,6 +422,9 @@ img {
     row-gap: 48px; /*для визначення вертикальних відступів між елементами списку якщо вони переносяться на новий рядок*/
     margin: 0;
     padding: 0;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08); /*для визначення тіні для елемента при наведені мишкою*/
 }
 
 
@@ -430,8 +433,30 @@ img {
     margin: 0;
     padding: 0;
     width: calc((100% - 48px) / 3); /*для визначення ширини для елемента списку*/
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); /*для плавної появи тіні*/
 }
 
+.li-portfolio:hover p {transform: translateY(0%);}
+
+.img-portfolio {
+    position: relative; /*для встановлення позиціонування елемента відносно його звичайного місця в потоці документу*/
+    overflow: hidden; /*для приховання контенту, який виходить за межі елемента*/
+}
+
+.p-img-portfolio {
+    position: absolute; /*що встановлює позиції елемента відносно його батьківського елемента*/
+    top: 0; /*для зміщення елемента до верхньої межі контейнера*/
+    font-size: 16px; /*для визначення розміру шрифту*/
+    line-height: 1.5;/* для визначення простору між рядками*/
+    letter-spacing: 0.02em; /*для визначення відстані між літерами*/
+    color: #f4f4fd;
+    padding: 40px 32px; /*відступів між вмістом елемента та його рамкою*/
+    background-color: #4d5ae5; /*fon*/
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%); /*змінює позицію елемента вздовж осі Y*/
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); /*дозволяє задавати анімаційний ефект для зміни значень властивостей стилю*/
+}
 .h-portfolio {
     font-weight: 500;
     font-size: 20px;
