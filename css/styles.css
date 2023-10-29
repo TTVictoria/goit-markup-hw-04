@@ -319,6 +319,9 @@ body {
     border-radius: 0px 0px 4px 4px; /*для визначення заокруглень внизу блока*/
     width: calc((100% - 72px) / 4); /*для визначення ширини пункту списку*/
     gap: 32px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 img {
@@ -362,6 +365,35 @@ img {
     text-align: center;
 }
 
+.ul-ellipse {
+    display: flex; /*для розміщення елементів списку по горизонталі в рядок*/
+    justify-content: center; /*для вирівнювання елементів по горизонталі*/
+    gap: 24px; /*для визначення розмірів відступів між елементами списку*/
+    list-style: none;
+}
+
+.li-ellipse {
+    width: 40px;
+    height: 40px;
+
+}
+
+.link-ellipse {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5; /*колір фону елемента*/
+    border-radius: 50%; /*встановлює радіуси кутів елемента*/
+    display: flex; /*для подальшої можливості зміни розташування дочірнього елемента*/
+    align-items: center; /*вирівнювання іконки по вертикалі*/
+    justify-content: center; /*вирівнювання іконки по горизонталі*/
+}
+
+.link-ellipse:hover {background-color: #404BBF;}
+.link-ellipse:focus {background-color: #404BBF;}
+
+.icon-ellipse {
+    fill: #f4f4fd; /*для визначення кольору іконки*/
+}
 /*section 4*/
 .portfolio {
     padding-top: 120px;
