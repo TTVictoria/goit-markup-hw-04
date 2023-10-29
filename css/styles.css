@@ -236,6 +236,17 @@ body {
     flex-basis: calc((100% - 3 * 24px) / 4); /*для визначення ширини пункту списку*/
 }
 
+.icons-svg {
+    display: flex;
+    align-items: center; /*по вертикалі*/
+    justify-content: center; /*по горизонталі*/
+    height: 112px; /*висотa блоку*/
+    width: 264px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
 
 .h-aboutus {
     font-weight: 500;
@@ -256,28 +267,6 @@ body {
     margin: 0;
     padding: 0;
     text-indent: 0%;
-}
-
-.h-people {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin: 0;
-    text-align: center;
-    margin-bottom: 8px;
-
-}
-
-.p-people {
-    line-height: 1.5;
-    font-size: 16px;
-    letter-spacing: 0.02em;
-    color: #434455;
-    margin: 0;
-    padding: 0;
-    text-align: center;
 }
 
 /*section 3*/
@@ -328,6 +317,27 @@ img {
     display: block;
     width: 100%;
     padding: 32px 0; /*для визначення відступів від краю контейнера*/
+}
+
+.h-people {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.p-people {
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 /*section 4*/
