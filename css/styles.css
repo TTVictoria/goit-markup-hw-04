@@ -385,8 +385,10 @@ img {
 .li-ellipse {
     width: 40px;
     height: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
+.ul-ellipse .li-ellipse .link-ellipse {transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /*для плавної зміни кольору фону елемента*/}
 
 .link-ellipse {
     width: 100%;
