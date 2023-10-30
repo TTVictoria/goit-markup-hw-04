@@ -157,7 +157,8 @@ body {
     margin-right: auto;
     padding: 188px 0; /*для визначення відступів всередині секції*/
     justify-content: center;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     max-width: 1440px;
     flex-shrink: 0;
     background-repeat: no-repeat;
@@ -518,7 +519,7 @@ img {
 .div-footer {
     display: flex;
     align-items: baseline;
-    margin-right: 120px;
+        margin-right: 120px;
 }
 
 
