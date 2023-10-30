@@ -571,6 +571,7 @@ font-style: normal;
 width: 96px;
 height: 24px;
 align-items: flex-start;
+letter-spacing: 0.02em;
 }
 
 .ul-sozial {
