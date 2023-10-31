@@ -556,9 +556,7 @@ img {
     text-align: left;
 }
 .div-content-socialmedia {
-    width: 208px;
-    height: 80px;
-    flex-shrink: 0;
+
 }
 .p-socialmedia {
 font-weight: 500; /*жирність шрифта*/
@@ -568,16 +566,13 @@ color: #FFFFFF; /*color text*/
 margin-bottom: 16px; /*відступи*/
 font-family: 'Roboto';
 font-style: normal;
-width: 96px;
-height: 24px;
 align-items: flex-start;
 letter-spacing: 0.02em;
 }
 
 .ul-sozial {
     gap: 16px;
-    display: inline-flex;
-    align-items: flex-start;
+    display: flex;
 }
 
 .li-sozial {
