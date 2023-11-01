@@ -200,6 +200,7 @@ body {
     border-radius: 4px; /*для визначення заокруглень у кнопки*/
     margin: 0 auto; /* Центрування горизонтально */
     text-align: center;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -556,7 +557,7 @@ img {
     text-align: left;
 }
 .div-content-socialmedia {
-
+margin-bottom: 16px;
 }
 .p-socialmedia {
 font-weight: 500; /*жирність шрифта*/
