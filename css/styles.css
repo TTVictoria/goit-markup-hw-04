@@ -568,6 +568,7 @@ font-style: normal;
 align-items: flex-start;
 letter-spacing: 0.02em;
 }
+p {margin: 0;}
 
 .ul-sozial {
     gap: 16px;
