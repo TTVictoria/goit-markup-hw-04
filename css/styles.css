@@ -53,6 +53,12 @@ body {
     border-radius: 2px;
 }
 
+.nav-studio {
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--OCEAN, #404BBF);}
+
 .logo {
     color: var(--IRIS, #4D5AE5);
     font-family: "Raleway", sans-serif;
@@ -510,11 +516,6 @@ img {
     background-color: #2e2f42;
     padding-top: 100px;
     padding-bottom: 100px; /*для визначення відступів всередині секції*/
-    width: 1440px;
-    height: 312px;
-    display: flex;
-    align-items: center;
-
 }
 
 .div-footer {
