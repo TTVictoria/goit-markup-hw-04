@@ -118,7 +118,7 @@ body {
 .nav-link a:focus {color: #404bbf;}
 
 .nav-studio {
-
+    color: #404bbf;
     text-decoration: underline;
 }
 
